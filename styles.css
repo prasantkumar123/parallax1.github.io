@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Akronim&family=Faster+One&family=Fredericka+the+Great&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
+@-ms-viewport{
 
+  width: device-width;
+
+}
 body {
 
     margin:0;
