@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Parallax webpage </title>
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+    <section>
+
+    <img src="https://i.ibb.co/FzkDN4w/bg.jpg" alt="bg" id="bg">
+
+    <img src="https://i.ibb.co/0qHTRjy/moon.png" alt="moon" id="moon">
+
+    <img src="https://i.ibb.co/YXB9hsX/mountain.png" alt="mountain" id="mountain">
+
+<img src="https://i.ibb.co/RQQw8jq/road.png" alt="road" id="road">
+
+<h2 id="headText">PRASANT</h2>
+
+    </section>
+
+    <div id="makeUp">
+
+    
+
+    <img id="swipe" src="https://c.tenor.com/hjGXQpxnk54AAAAj/swipe-up.gif">
+
+    <h1 id="slow">Slowly</h1>
+
+        <img id="ninja" src="https://c.tenor.com/GZBJyaDeJGQAAAAj/sonic-the-hegdehog-sonic.gif">
+
+    </div>
+
+    
+
+        <div class="content">
+
+        
+
+            <h2 class="heading">Sample Heading</h2>
+
+            <p class="para">Hi, this is the paragraph section. You can add anything you like here. I am adding some text for trial. Now it is your turn. you have to add something now, otherwise I will bite you.</p>
+
+        </div>
+
+        <img id="bird" src="https://c.tenor.com/q9lGdnI5EfIAAAAj/paz-dove.gif">
+
+        <div class="content c2">
+
+        
+
+            <h2 class="heading">Lorem lipsum</h2>
+
+            <p class="para">Hi, this is the paragraph section. You can add anything you like here. I am adding some text for trial. Now it is your turn. you have to add something now, otherwise I will bite you. </p>
+
+        </div>
+
+     
+
+        
+
+        <script>
+
+  window.addEventListener('scroll', function(){
+
+                
+
+            var bg = document.querySelector("#bg");
+
+             var moon = document.querySelector("#moon");
+
+             var mountain = document.querySelector("#mountain");
+
+             var road = document.querySelector("#road");
+
+             var text = document.querySelector("#headText");
+
+             var x = text.style.top;
+
+             var y = road.style.top;
+
+             
+
+      var value = window.scrollY;
+
+      
+
+      bg.style.top = value * 0.001 +"px";
+
+      moon.style.left = -value * 0.55 +"px";
+
+      mountain.style.top = -value * 0.15 +"px";
+
+      road.style.top = value * 0.001 +"px";
+
+      text.style.bottom = -value + 170 +"px";
+
+    
+
+    
+
+    if(value >= 131){
+
+        text.style.display ="none";
+
+    }else{
+
+        text.style.display ="inline";
+
+    }
+
+    
+
+            })
+
+        </script>
+
+        
+
+    </body>
+
+</html>
