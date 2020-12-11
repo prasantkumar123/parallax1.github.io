@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Faster+One&family=Fredericka+the+Great&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
+
+body {
+
+    margin:0;
+
+    padding:0;
+
+    background:#0a2a43;
+
+    
+
+}
+
+section{
+
+    position:relative;
+
+    width:100%;
+
+    top:0;
+
+    height:100vh;
+
+    overflow:hidden;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    
+
+}
+
+section img{
+
+    position:absolute;
+
+    width:100%;
+
+    height:50%;
+
+    top:0;
+
+    left:0;
+
+    object-fit:cover;
+
+    pointer-events:none;
+
+}
+
+section:before{
+
+    content:'';
+
+    position:absolute;
+
+    bottom:50%;
+
+    height:100px;
+
+    width:100%;
+
+    background:linear-gradient(to top, #0a2a43 , transparent );
+
+    z-index:900;
+
+}
+
+section:after{
+
+    content:'';
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    height:100%;
+
+    width:100%;
+
+    background: #0a2a43;
+
+    
+
+    z-index:900;
+
+    mix-blend-mode:color;
+
+}
+
+#headText{
+
+    position:relative;
+
+    color:white;
+
+    z-index:1;
+
+    font-size:55px;
+
+    font-weight:550;
+
+    bottom:170px;
+
+    text-shadow:1px 1px 2px black, 2px 2px 3px black, 4px 4px 3px black, 5px 5px 4px black;
+
+    font-family: 'Faster One', cursive;
+
+}
+
+#road{
+
+    z-index:2;
+
+}
+
+h1{
+
+    color:white;
+
+}
+
+#makeUp{
+
+    
+
+    height:280px;
+
+    width:100%;
+
+    position:absolute;
+
+    bottom:0;
+
+    z-index:9999999999;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+}
+
+#ninja{
+
+    height:40%;
+
+    width:20%;
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    animation:moveNinja 2.5s infinite linear;
+
+    mix-blend-mode:none;
+
+}
+
+@keyframes moveNinja{
+
+    0%{
+
+        left:0;
+
+    }
+
+    100%{
+
+        left:100%;
+
+    }
+
+}
+
+#swipe{
+
+    height:40%;
+
+    width:30%;
+
+    
+
+}
+
+#bird{
+
+    height:50%;
+
+    width:30%;
+
+    position:absolute;
+
+    right:0;
+
+    animation:moveBird 5s infinite linear;
+
+}
+
+@keyframes moveBird{
+
+    0%{
+
+        right:0;
+
+    }
+
+    100%{
+
+        right:100%;
+
+    }
+
+}
+
+#slow{
+
+    font-family: 'Akronim', cursive;
+
+    font-size:70px;
+
+    user-select:none;
+
+    font-weight:550;
+
+}
+
+.heading{
+
+    color:white;
+
+    text-align:center;
+
+    font-size:50px;
+
+    padding:3px;
+
+    background:linear-gradient(50deg, rgba(50, 50, 220, 0.5), transparent, black);
+
+    border-radius:30px;
+
+    box-shadow:3px 4px 5px black;
+
+    text-shadow:3px 4px 5px black;
+
+    margin-top:0;
+
+    user-select:none;
+
+    font-family: 'Sail', cursive;
+
+}
+
+.content{
+
+    background:url('https://c.tenor.com/td9A0_KKqYsAAAAj/rose-moira.gif');
+
+    background-size:cover;
+
+    background-attachment:fixed;
+
+    margin:0;
+
+    padding:0;
+
+   border-radius:30px;
+
+   box-shadow:3px 4px 5px black, inset 1px 2px 5px black;
+
+}
+
+.para{
+
+    color:white;
+
+    font-size:30px;
+
+    text-shadow:1px 2px 5px blue;
+
+    padding:30px;
+
+    -webkit-background-clip:border-box;
+
+    font-family: 'Sail', cursive;
+
+}
+
+.c2{
+
+    padding-top:200px;
+
+   margin-top:0; background:url('https://c.tenor.com/mJzMg1envzQAAAAj/flowers-roses.gif');
+
+    background-size:cover;
+
+    background-attachment:fixed;
+
+}
+
